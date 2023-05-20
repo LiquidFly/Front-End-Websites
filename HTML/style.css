@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap");
+/* RESET CSS */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*  GLOBAL VARIABLES */
+:root {
+  --primary-text-color: #183b56; /*COLOR USED FOR HEADINGS*/
+  --secondary-text-color: #577592; /* COLOR USED FOR CONTENT AND PARAGRAPHS */
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+  --padding-inline-section: 20px; /*USED FOR GIVING PADDING TO THE CONTENT */
+}
+
+/*  EDITING THE DEFAULT VALUE OF SOME ELEMENTS */
+body {
+  font-family: "Poppins", "Times New Roman", Times, serif;
+  color: var(--primary-text-color);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8rem;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+/* !UTILITY CLASS / DEFINING PROPERTIES--> */
+.small-bold-text {
+  font-size: 1rem;
+  font-weight: 700;
+}
+/* DEFINING A CONTAINER IN WHICH ALL CONTENT WILL BE WRITTEN */
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+}
+/* DEFINING THE FLEX-BOX PROPERTY */
+.flex {
+  display: flex;
+  align-items: center;
+}
+.hover-link {
+  color: var(--primary-text-color);
+  transition: 0.2s ease-out;
+}
+.hover-link:hover {
+  color: var(--accent-color);
+}
+
+.primary-button {
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  font-weight: 700;
+  color: white !important;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+}
+.primary-button:hover {
+  background-color: var(--accent-color-dark);
+}
+
+.secondary-button {
+  border: 0.5px solid var(--secondary-text-color);
+  border-radius: 6px;
+  font-weight: 700;
+  color: var(--primary-text-color) !important;
+  padding: 12px 24px;
+  transition: 0.2s ease-out;
+}
+.secondary-button:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color) !important;
+}
+
+/* #######################################################     MAIN CSS #####################################################*/
+
+/*! TOP-BANNER SECTION */
+/* TEXT OF TOP BANNER */
+.banner-text {
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+}
+/*OUTER STRUCTURE OF TOP BANNER BACK OF TOP BANNER */
+.top-banner {
+  background-color: #4fb3d4;
+  background-image: url(images/asset\ 32.png);
+  background-size: 300px;
+}
+
+/* !NAV BAR SECTION */
+/* NAV BAR OUTER STRUCTURE */
+.nav_bar {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+/* THE IMAGE OF LOGO OF THE COMPANY */
+.company-logo img {
+  width: 200px;
+}
+/* MENU OF NAV BAR CONTANING LINKS */
+.nav-menu {
+  flex-basis: 700px;
+}
+/* UL LIST OF NAV MENU */
+.nav-menu ul {
+  justify-content: end;
+  gap: 40px;
+}
+
+/* !HEADER-SECTION */
+/* HEADER OUTER STRUCTURE */
+header {
+  padding: 50px var(--padding-inline-section);
+}
+/* SECTION INSIDE HEADER (FLEX-BOX) */
+.header-section {
+  justify-content: center;
+  gap: 50px;
+}
+/* IMG OF HEADER-RIGHT SECTION */
+.header-right img {
+  width: 600px;
+}
+/* H1 TAG OF HEADER-LEFT SECTION */
+.header-left h1 {
+  margin-bottom: 10px;
+}
+/* THE G ET STARTED BTN */
+.get-started {
+  margin-top: 21px;
+}
+
+/* ! COMPANIES SECTION */
+/* HEADER OF COMPANIES SECTION */
+.companies-header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--primary-text-color);
+}
+/* LOGOS OF COMANIES SECTION */
+.company-logos {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* LOGOS OF COMAPNIES */
+.logos {
+  height: 45px;
+}
+
+/* ! BIG FEATURES SECTION */
+/* OUTER STRUCTURE OF BIG FEATURE SECTION */
+.big-feature {
+  padding: 80px var(--padding-inline-section) 0;
+  background-image: url(images/asset\ 34.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* HEADER OF BIG FEATURE SECTION */
+.feature-header {
+  text-align: center;
+}
+/* TEXT OF HEADER OF BIG FEATURE SECTION  */
+.feature-header-text {
+  margin-top: 20px;
+}
+/* BTN OF HEADER OF BIG FEATURE SECTION  */
+.feature-header-button {
+  margin-top: 20px;
+}
+
+/* FEATURE MAIN BODY SECTION */
+/* AREA INSIDE ALL THE CARDS WERE PLACED */
+.feature-area {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 20px;
+}
+/* CARD INSIDE THE AREA  */
+.feature-area-card {
+  flex-direction: column;
+  gap: 20px;
+  /* justify-content: flex-start; */
+  max-width: 30%;
+  text-align: center;
+}
+
+/* !BIG-FEATURE SECTION 1 */
+/* OUTER STRUCTURE OF BIG FEATURE SECTION-1 */
+.big-feature-1 {
+  padding: 30px;
+}
+/* CONTAINER OF BIG-FEATURE SECTION */
+.big-feature-1-container {
+  gap: 30px;
+}
+/* IMG OF BIG FEATURE SECTION-1 */
+.big-feature-1-left img {
+  width: 100%;
+}
+/* CONTENT OF BIG FEATURE SECTION-1 */
+.big-feature-1-right {
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url(images/asset\ 35.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 78%;
+}
+/* HEADING ON RIGHT SIDE */
+.big-feature-1-right h3 {
+  margin-top: 10px;
+}
+/* PARAGRAPH ON RIGHT SIDE */
+.lower-p {
+  justify-content: flex-start;
+  width: 75%;
+  position: relative;
+  top: 15px;
+}
+
+/* !EXAMPLES */
+
+.examples-main-area {
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.examples-header {
+  text-align: center;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.examples-header-text {
+  margin-top: 20px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 1000;
+}
+
+.card-text {
+  position: absolute;
+  top: 211px;
+  left: 7px;
+  right: 7px;
+  color: white;
+}
+
+.example-img-1 {
+  height: 300px;
+  width: 30%;
+  background-color: black;
+  position: relative;
+  min-height: 300px;
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
+    url(images/asset\ 37.jpeg);
+  background-size: cover;
+}
+
+.example-img-1:hover {
+  box-shadow: 0 0 10px #888;
+}
+
+.example-img-2 {
+  height: 300px;
+  width: 30%;
+  background-color: black;
+  position: relative;
+  min-height: 300px;
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
+    url(images/asset\ 39.jpeg);
+  background-size: cover;
+}
+
+.example-img-2:hover {
+  box-shadow: 0 0 10px #888;
+}
+
+.example-img-3 {
+  height: 300px;
+  width: 30%;
+  background-color: black;
+  position: relative;
+  min-height: 300px;
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
+    url(images/asset\ 37.jpeg);
+  background-size: cover;
+}
+
+.example-img-3:hover {
+  box-shadow: 0 0 10px #888;
+}
+
+.CTA {
+  flex-direction: column;
+  gap: 45px;
+  color: black;
+  background-color: white;
+  padding: 90px var(--padding-inline-section);
+  margin-top: 10px;
+}
+
+.CTA h2 {
+  font-size: 50px;
+}
+
+.CTA p {
+  font-size: 26px;
+}
+
+.CTA a {
+  font-size: 27px;
+}
+
+/* !CTA-2 */
+
+.right img {
+  width: 130%;
+}
+
+.CTA-2 {
+  background-color: #183b54;
+  color: white;
+}
+
+.CTA-2-section {
+  flex-direction: row-reverse;
+}
+
+.left {
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  width: 120%;
+}
+
+.left h2 {
+  position: relative;
+  left: 20px;
+}
+
+.CTA-2 h2 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 50px;
+  width: 42%;
+  margin-bottom: 46px;
+  position: relative;
+  left: 1px;
+  font-size: 37px;
+  font-weight: 1000;
+}
+
+.CTA-2-section p {
+  width: 80%;
+  margin-block: 2%;
+  font-weight: 1000;
+}
+
+.CTA-2-section h5 {
+  font-size: 120%;
+  font-weight: 1000;
+}
+
+.CTA-2-section ul {
+  list-style: square;
+  flex-flow: wrap;
+  gap: 17%;
+  font-size: 120%;
+  font-weight: 1000;
+}
+
+.CTA-btn {
+  position: relative;
+  width: 7.9%;
+  /* background-color:#1d69a3; */
+  margin-block: 20px;
+  margin-inline: 750px;
+  padding: 20px;
+}
+
+.CTA-button a {
+  font-size: 97%;
+}
